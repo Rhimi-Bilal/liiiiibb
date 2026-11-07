@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 09:53:17 by username         #+#    #+#              */
-/*   Updated: 2026/10/31 12:44:52 by username        ###   ########.fr        */
+/*   Updated: 2026/11/07 11:55:07 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
-# include <string.h>
+// # include <string.h>
 # include <stddef.h>
 # include <stdint.h>
-# include <ctype.h>
 
 typedef struct s_list
 {
@@ -69,6 +68,6 @@ void			ft_lstadd_back(t_list **lst, t_list *new);
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
-t_list			*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list			*ft_lstmap(t_list *lst, void *(*f)(void *), void (*d)(void *));
 
 #endif

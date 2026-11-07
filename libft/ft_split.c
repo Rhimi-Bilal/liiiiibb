@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_split.c                                        :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/24 11:03:19 by username         #+#    #+#              */
-/*   Updated: 2026/10/31 13:17:19 by username        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: brhimi <brhimi@student.1337.ma>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/24 11:03:19 by username          #+#    #+#             */
+/*   Updated: 2026/11/07 11:38:54 by brhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,22 +100,3 @@ char	**ft_split(char const *s, char c)
 	r[j] = NULL;
 	return (r);
 }
-
-// int	main(void)
-// {
-// 	char	**result;
-// 	int		i;
-
-// 	result = ft_split("salam,alaikom,wa,rahmato,llah", ',');
-// 	if (result == NULL)
-// 		return (1);
-// 	i = 0;
-// 	while (result[i] != NULL)
-// 	{
-// 		printf("%s\n", result[i]);
-// 		free(result[i]);
-// 		i++;
-// 	}
-// 	free(result);
-// 	return (0);
-// }
